@@ -1,0 +1,5 @@
+select m.id,m.model_name,c.id,c.name,(m.price*s.quantity) as revenue from Sales s 
+left join Motorcycle_model m on (s.model_id=m.id)
+left join country c on (s.country_id=c.id)
+where s.sales_Date >= '2017-12-31'
+group by m.id,c.id ;
