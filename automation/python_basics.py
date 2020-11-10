@@ -1,3 +1,5 @@
+# Automate boring stuff using Python 
+
 # total = 0
 # for num in range(101):
 #     # print(num, 100-num)
